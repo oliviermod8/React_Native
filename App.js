@@ -14,7 +14,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundImage: 'url("/assets/universe.jpeg")',
+    bacgroundPosition: "center center",
+    backgroundSize : "cover",
     alignItems: 'center',
     justifyContent: 'center',
   },
