@@ -7,7 +7,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.text}>Hello Universe !</Text>
       <TouchableOpacity onPress={() => console.log('Image')}>
-      {/* <Image style={{ width: 414, height: 780 }} source={require('./assets/system.jpg')}/> */}
+      <Image style={{ width: 414, height: 780 }} source={require('./assets/system.jpg')}/>
       </TouchableOpacity>
       <Button title="Click Me" onPress={() => console.log('Button tap')} />
      </View>
@@ -17,8 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundImage: 'url("/assets/universe.jpeg")',
-    bacgroundPosition: "center center",
+    backgroundPosition: "center center",
     backgroundSize : "cover",
     alignItems: 'center',
     justifyContent: 'center',
