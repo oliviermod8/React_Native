@@ -13,7 +13,7 @@ export default function vuePlanets({navigation}) {
        <ImageBackground source={image} style={styles.image}>
        <Text style={styles.title}>Les Planètes</Text>
        <TouchableOpacity 
-         onPress={() => navigation.navigate('DetailsPlanets')}>
+         onPress={() => navigation.navigate('DetailsPlanets' , {itemId:4})}>
        <View style={styles.buttonAcceuil}>
         <Text style={styles.textbuttonAccount}>de plus près</Text>
         </View>

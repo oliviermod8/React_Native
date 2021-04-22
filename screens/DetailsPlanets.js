@@ -1,12 +1,14 @@
 import React from "react";
-import {ScrollView, SafeAreaView, Image, Dimensions,Text, StyleSheet, View, TouchableOpacity } from "react-native";
+import {ScrollView, SafeAreaView, Image,ImageBackground, Dimensions,Text, StyleSheet, View, TouchableOpacity } from "react-native";
 import plantsInfo from '../components/planets'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
+
 const windowHeight = Dimensions.get('window').height;
 
-const DetailsPlanets = ({navigation}) => {
- 
+const DetailsPlanets = ({navigation, route}) => {
+  const { itemId } = route.params;
   return (
     
     <SafeAreaView style={styles.bgInfo}>
@@ -26,19 +28,21 @@ const DetailsPlanets = ({navigation}) => {
               style={styles.visuelPlanet}
               source={{
                 uri:
-                  `${plantsInfo[0].imgUrl}`,
+                  `${plantsInfo[itemId].imgUrl}`,
               }}
             ></Image>
           </View>
 
           <View style={styles.introPlanet}>
-            <Text style={styles.title}>{plantsInfo[0].nom}</Text>
+            <Text style={styles.title}>{plantsInfo[itemId].nom}</Text>
             <Text style={styles.accroche}>
-            {plantsInfo[0].accroche}
+            {plantsInfo[itemId].accroche}
             </Text>
           </View>
       </View>
-      
+      <View style={styles.info}>
+
+      </View>
      
       </ScrollView>
     </SafeAreaView>
