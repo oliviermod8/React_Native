@@ -1,67 +1,33 @@
-import React from "react";
+import { StatusBar } from "expo-status-bar";
+import "react-native-gesture-handler";
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+// import { Screen } from "react-native"
+import Accueil from "./screens/acceuil";
+import VuePlanets from "./screens/vuePlanets";
 import Allplanets from "./components/Allplanets";
-import { StyleSheet } from "react-native";
-const image = {
-	uri:
-		"https://images.unsplash.com/photo-1540198163009-7afda7da2945?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80",
-};
+
+const Stack = createStackNavigator();
+
 export default function App() {
-	return <Allplanets />;
+	return (
+		<NavigationContainer>
+			<Stack.Navigator
+				initialRouteName="Home"
+				screenOptions={{
+					headerStyle: {
+						backgroundColor: "#000000",
+					},
+					headerTintColor: "#ffffff",
+					headerTitleStyle: {
+						fontSize: 15,
+					},
+				}}
+			>
+				<Stack.Screen name="Home" component={Accueil} />
+				<Stack.Screen name="VuePlanets" component={VuePlanets} />
+			</Stack.Navigator>
+		</NavigationContainer>
+	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-	},
-
-	centeredView: {
-		flex: 1,
-		justifyContent: "center",
-		alignItems: "center",
-		marginTop: 22,
-	},
-
-	image: {
-		flex: 1,
-		width: "100%",
-		resizeMode: "contain",
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	texte: {
-		alignItems: "center",
-		fontSize: 50,
-		textAlign: "center",
-		color: "white",
-	},
-	appButtonContainer: {
-		elevation: 8,
-		backgroundColor: "#010213",
-		borderRadius: 10,
-		paddingVertical: 10,
-		paddingHorizontal: 12,
-	},
-	appButtonText: {
-		fontSize: 18,
-		color: "#fff",
-		fontWeight: "bold",
-		alignSelf: "center",
-		textTransform: "uppercase",
-		margin: 0,
-	},
-
-	modalText: {
-		color: "white",
-		fontSize: 100,
-	},
-	modalP: {
-		color: "white",
-		fontSize: 50,
-		padding: 50,
-		color: "black",
-	},
-
-	textStyle: {
-		color: "white",
-	},
-});
