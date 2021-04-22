@@ -1,18 +1,21 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, ImageBackground,TouchableOpacity, Text, View, Button } from "react-native";
-import Acceuil from './screens/acceuil'
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+// import { Screen } from "react-native"
+import Accueil from './screens/acceuil'
+import VuePlanets from './screens/vuePlanets'
 
+const Stack = createStackNavigator()
 
-
-const image = {
-  uri:
-    "https://images.unsplash.com/photo-1540198163009-7afda7da2945?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80",
-};
 export default function App() {
   return (
-   <>
-   <Acceuil />
-   </>
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName='Home'>
+          <Stack.Screen name='Home' component={Accueil} />
+          <Stack.Screen name="VuePlanets" component={VuePlanets} />
+        </Stack.Navigator>
+    </NavigationContainer>
   );
 }

@@ -1,21 +1,19 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, ImageBackground,TouchableOpacity, Text, View, Button, Alert, } from "react-native";
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 const image = {
   uri:
     "https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
 };
-export default function acceuil({navigation}) {
+export default function vuePlanets() {
   return (
    <View style={styles.container}>
        <ImageBackground source={image} style={styles.image}>
-       <Text style={styles.title}>Universe</Text>
-        <TouchableOpacity 
-        onPress={() => navigation.navigate('VuePlanets')}>
+       <Text style={styles.title}>Les Planètes</Text>
+       <TouchableOpacity 
+        onPress={() => Alert.alert('Ce n est qu un test')}>
        <View style={styles.buttonAcceuil}>
-        <Text style={styles.textbuttonAccount}>Explore</Text>
+        <Text style={styles.textbuttonAccount}>de plus près</Text>
         </View>
         </TouchableOpacity>
         </ImageBackground>
