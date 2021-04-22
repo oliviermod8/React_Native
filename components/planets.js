@@ -48,6 +48,7 @@ const plantsInfo = [
 	{
 		id: 3,
 		nom: "La Terre",
+		latin: "Terra",
 		imgUrl:
 			"https://cnes.fr/sites/default/files/drupal/201610/image/is-terre-apollo17.jpg",
 		diametre: "12 756 km",
