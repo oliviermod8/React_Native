@@ -22,9 +22,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-<<<<<<< HEAD
-    backgroundColor: '#000000',
-=======
   },
   image: {
     flex: 1,
@@ -34,7 +31,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   texte:{
->>>>>>> 21c3ac5edd12bc2615cecd82110bf86d7244f578
     alignItems: 'center',
     fontSize: 50,
     textAlign: "center"
@@ -46,18 +42,6 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12
   },
-<<<<<<< HEAD
-  image:{
-    height: 90,
-    width:90,
-  },
-  text: {
-    color: '#fff',
-    height: 120,
-    fontSize:50,
-    display : 'flex',
-    position : 'absolute'
-=======
   appButtonText:{
     fontSize: 18,
     color: "#fff",
@@ -65,6 +49,5 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     textTransform: "uppercase",
     margin: 0
->>>>>>> 21c3ac5edd12bc2615cecd82110bf86d7244f578
   }
 });
