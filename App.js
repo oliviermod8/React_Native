@@ -10,10 +10,10 @@ export default function App() {
       <Image source={require('./assets/moon.jpeg')} style={styles.image}/>
       <Image source={require('./assets/mars.jpeg')} style={styles.image}/>
       <Image source={require('./assets/jupiter.jpeg')} style={styles.image}/>
-      <Text style={styles.text}>Hello universe !</Text>
       <Image source={require('./assets/uranus.jpeg')} style={styles.image}/>
       <Image source={require('./assets/neptune.jpeg')} style={styles.image}/>
-      {/* <Image source={require('./assets/sun.jpeg')} style={styles.image}/> */}
+      <Text style={styles.text}>Hello universe !</Text>
+      <Image source={require('./assets/sun.jpeg')} style={styles.image}/>
     </View>
   );
 }
