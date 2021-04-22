@@ -17,9 +17,7 @@ const Allplanets = ({ navigation }) => {
 		>
 			<FlatList
 				data={plantsInfo}
-				renderItem={({ item }) => (
-					<Protoplanet item={item} itemIdentifiant={item.id} />
-				)}
+				renderItem={({ item }) => <Protoplanet item={item} />}
 			/>
 		</View>
 	);

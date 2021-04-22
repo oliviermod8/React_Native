@@ -1,5 +1,5 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
 	Text,
@@ -7,15 +7,15 @@ import {
 	StyleSheet,
 	Image,
 	Dimensions,
-	Button,
+	TouchableOpacity,
 } from "react-native";
-// import plantsInfo from "./planets";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-const Protoplanet = ({ item, navigation, itemIdentifiant }) => {
+const Protoplanet = ({ item }) => {
 	const image = { uri: item.imgUrl };
+	const navigation = useNavigation();
 	return (
 		<View style={styles.centeredView}>
 			<Image source={image} style={styles.image} />
@@ -24,7 +24,7 @@ const Protoplanet = ({ item, navigation, itemIdentifiant }) => {
 			<Text style={styles.texteNormal}>{item.temperature}</Text>
 
 			<TouchableOpacity
-				onPress={() => navigation.navigate("DetailsPlanets", { itemId: 5 })}
+				onPress={() => navigation.push("DetailsPlanets", { itemId: item.id })}
 			>
 				<View style={styles.buttonAcceuil}>
 					<Text style={styles.textbuttonAccount}>{item.id}</Text>
