@@ -1,44 +1,22 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { useState } from "react";
-import {
-  StyleSheet,
-  ImageBackground,
-  TouchableOpacity,
-  Text,
-  View,
-  Button,
-  Alert,
-  Modal,
-  Pressable,
-  Image,
-  SafeAreaView,
-  ScrollView,
-} from "react-native";
-import DetailsPlanets from "./screens/DetailsPlanets";
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+// import { Screen } from "react-native"
+import Accueil from './screens/acceuil'
+import VuePlanets from './screens/vuePlanets'
+import DetailsPlanets from './screens/DetailsPlanets'
+const Stack = createStackNavigator()
 
 export default function App() {
-  const [modalVisible, setModalVisible] = useState(false);
   return (
-  //   <SafeAreaView style={styles.container}>
-  //   <ScrollView style={styles.scrollView}>
-  //     <DetailsPlanets/>
-  //   </ScrollView>
-  // </SafeAreaView>
-  <View style={styles.container}>
-
-    <DetailsPlanets/>
-
-</View>
-      
-
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName='Home'>
+          <Stack.Screen name='Home' component={Accueil} />
+          <Stack.Screen name="VuePlanets" component={VuePlanets} />
+          <Stack.Screen name="DetailsPlanets" component={DetailsPlanets} />
+        </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-
-});

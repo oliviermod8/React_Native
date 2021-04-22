@@ -1,14 +1,16 @@
 import React from "react";
 import {ScrollView, SafeAreaView, Image, Dimensions,Text, StyleSheet, View, TouchableOpacity } from "react-native";
 import plantsInfo from '../components/planets'
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 const windowHeight = Dimensions.get('window').height;
 
-const DetailsPlanets = (props) => {
+const DetailsPlanets = ({navigation}) => {
  
   return (
     
-    <SafeAreaView >
-        <TouchableOpacity style={styles.back}>
+    <SafeAreaView style={styles.bgInfo}>
+        <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('VuePlanets')}>
         <View>
         <Image
           style={styles.logoBack}
@@ -51,6 +53,9 @@ const styles = StyleSheet.create({
   //   alignItems: "center",
   //   position: "relative",
   // },
+  bgInfo:{
+    backgroundColor : "black",
+  },
   scrollView:{
     flex:1,
     flexDirection:'column',
