@@ -1,6 +1,6 @@
 import React from "react";
 import {ScrollView, SafeAreaView, Image, Dimensions,Text, StyleSheet, View, TouchableOpacity } from "react-native";
-import plantsInfo from '../Components/planets'
+import plantsInfo from '../components/planets'
 const windowHeight = Dimensions.get('window').height;
 
 const DetailsPlanets = (props) => {
