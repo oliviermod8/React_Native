@@ -12,7 +12,15 @@ const Stack = createStackNavigator()
 export default function App() {
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName='Home'>
+        <Stack.Navigator initialRouteName='Home' screenOptions={{
+        headerStyle: {
+          backgroundColor: '#000000',
+        },
+        headerTintColor: '#ffffff',
+        headerTitleStyle: {
+          fontSize : 15,
+        },
+      }}>
           <Stack.Screen name='Home' component={Accueil} />
           <Stack.Screen name="VuePlanets" component={VuePlanets} />
         </Stack.Navigator>

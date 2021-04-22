@@ -13,7 +13,7 @@ export default function acceuil({navigation}) {
        <ImageBackground source={image} style={styles.image}>
        <Text style={styles.title}>Universe</Text>
         <TouchableOpacity 
-        onPress={() => navigation.navigate('VuePlanets')}>
+        onPress={() => navigation.push('VuePlanets')}>
        <View style={styles.buttonAcceuil}>
         <Text style={styles.textbuttonAccount}>Explore</Text>
         </View>
