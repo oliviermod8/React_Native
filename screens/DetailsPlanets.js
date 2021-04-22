@@ -8,18 +8,19 @@ import { createStackNavigator } from '@react-navigation/stack';
 const windowHeight = Dimensions.get('window').height;
 
 const DetailsPlanets = ({navigation, route}) => {
+  
   const { itemId } = route.params;
   return (
     
     <SafeAreaView style={styles.bgInfo}>
-        <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('VuePlanets')}>
+        {/* <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('VuePlanets')}>
         <View>
         <Image
           style={styles.logoBack}
           source={require("../assets/chevron_left.jpg")}
         />
       </View>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <ScrollView style={styles.item}>
 
       <View style={styles.containerIntro}>
@@ -41,7 +42,37 @@ const DetailsPlanets = ({navigation, route}) => {
           </View>
       </View>
       <View style={styles.info}>
-
+            <Image
+                    style={styles.bgPlanet}
+                    source={{
+                      uri:
+                        `${plantsInfo[itemId].imgUrl}`,
+                    }}
+            ></Image>
+              <View style={styles.box}>
+                <Text style={styles.titleBox}>Type :</Text>
+                <Text style={styles.textBox}> {plantsInfo[itemId].type} </Text>
+              </View>
+              <View style={styles.box}>
+                <Text style={styles.titleBox}>Distance :</Text>
+                <Text style={styles.textBox}> {plantsInfo[itemId].distance} </Text>
+              </View>
+              <View style={styles.box}>
+                <Text style={styles.titleBox}>Gravité :</Text>
+                <Text style={styles.textBox}> {plantsInfo[itemId].gravite} </Text>
+              </View>
+              <View style={styles.box}>
+                <Text style={styles.titleBox}>Inclinaison :</Text>
+                <Text style={styles.textBox}> {plantsInfo[itemId].inclinaison} </Text>
+              </View>
+              <View style={styles.box}>
+                <Text style={styles.titleBox}>Température :</Text>
+                <Text style={styles.textBox}> {plantsInfo[itemId].temperature} </Text>
+              </View>
+              <View style={styles.box}>
+                <Text style={styles.titleBox}>Diametre :</Text>
+                <Text style={styles.textBox}> {plantsInfo[itemId].diametre} </Text>
+              </View>
       </View>
      
       </ScrollView>
@@ -50,13 +81,6 @@ const DetailsPlanets = ({navigation, route}) => {
 };
 
 const styles = StyleSheet.create({
-  // item: {
-  //   backgroundColor: "black",
-  //   flexDirection: "column",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   position: "relative",
-  // },
   bgInfo:{
     backgroundColor : "black",
   },
@@ -110,6 +134,8 @@ const styles = StyleSheet.create({
     fontSize: 50,
     textAlign: "center",
     marginBottom: 40,
+    fontWeight:"600",
+    letterSpacing: 5,
   },
   accroche: {
     color: "#fff",
@@ -118,6 +144,41 @@ const styles = StyleSheet.create({
   },
   planetInformation:{
     width: "80%",
+  },
+  info:{
+      width:"100%",
+      flexDirection:"row",
+      flexWrap :"wrap",
+      position:"relative",
+  },
+  bgPlanet:{
+      position:"absolute",
+      top: "50%",
+      left:"50%",
+      transform:[{translateY:-50},{translateX:-50}],
+      zIndex:-10,
+      width: 200,
+      height: 200,
+  },
+  box:{
+    width:"42%",
+    height:200,
+    margin:"4%",
+    backgroundColor: "rgba(255,252,252,0.1)",
+    flexDirection: "column",
+    alignItems:"center",
+  },
+  titleBox:{
+    paddingTop: 20,
+    color:"white",
+    fontSize: 20,
+    fontWeight: "bold",
+    letterSpacing: 1.3
+  },
+  textBox:{
+    color: "white",
+    marginTop: 60,
+    textTransform: "capitalize",
   }
 });
 
