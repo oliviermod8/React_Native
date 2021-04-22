@@ -17,7 +17,7 @@ function protoPlanet() {
 	return (
 		<View style={styles.centeredView}>
 			<ImageBackground
-				source={require("./assets/earth.jpeg")}
+				source={require("./assets/universe.jpeg")}
 				style={styles.image}
 			>
 				<Text style={styles.modalText}>La terre</Text>
