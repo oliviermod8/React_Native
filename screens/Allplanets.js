@@ -8,25 +8,26 @@ import Protoplanet from "../components/Protoplanet";
 const windowWidth = Dimensions.get("window").width;
 
 const Allplanets = () => {
-	return (
-		<View>
-			<FlatList
-				data={plantsInfo}
-				horizontal
-				renderItem={({ item }) => <Protoplanet item={item} />}
-				style={styles.vueP}
-				contentContainerStyle={{
-					justifyContent: "center",
-				}}
-			/>
-		</View>
-	);
+  return (
+    <View>
+      <FlatList
+        data={plantsInfo}
+        horizontal
+        renderItem={({ item }) => <Protoplanet item={item} />}
+        style={styles.vueP}
+        contentContainerStyle={{
+          justifyContent: "center",
+        }}
+      />
+    </View>
+  );
 };
 
 export default Allplanets;
 
 const styles = StyleSheet.create({
-	vueP: {
-		width: windowWidth,
-	},
+  vueP: {
+    width: windowWidth,
+    backgroundColor: "black",
+  },
 });
