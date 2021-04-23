@@ -28,5 +28,6 @@ export default Allplanets;
 const styles = StyleSheet.create({
 	vueP: {
 		width: windowWidth,
+		backgroundColor: "black",
 	},
 });
