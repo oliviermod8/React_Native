@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 
 export default function App() {
 	return (
-		<NavigationContainer>
+		<NavigationContainer style={{ backgroundColor: "black" }}>
 			<Stack.Navigator
 				initialRouteName="Home"
 				screenOptions={{
