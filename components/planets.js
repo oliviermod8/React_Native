@@ -2,6 +2,7 @@ const plantsInfo = [
 	{
 		id: 0,
 		nom: "Soleil",
+		latin: "soliculus",
 		imgUrl:
 			"https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
 		diametre: "1 393 684 km",
@@ -16,6 +17,7 @@ const plantsInfo = [
 	{
 		id: 1,
 		nom: "Mercure",
+		latin: "Mercurius",
 		imgUrl:
 			"https://cnes.fr/sites/default/files/drupal/201511/image/is_mercure-messenger.jpg",
 		diametre: "4 879 km",
@@ -32,6 +34,7 @@ const plantsInfo = [
 	{
 		id: 2,
 		nom: "Vénus",
+		latin: "Venus",
 		imgUrl:
 			"https://cnes.fr/sites/default/files/drupal/201511/image/is_venus-nasa.jpg",
 		diametre: "12 104 km",
@@ -65,6 +68,7 @@ const plantsInfo = [
 	{
 		id: 4,
 		nom: "Mars",
+		latin: "Mārs",
 		imgUrl:
 			"https://cnes.fr/sites/default/files/drupal/201510/image/is_mars-planete.jpg",
 		diametre: "6 794 km",
@@ -81,6 +85,7 @@ const plantsInfo = [
 	{
 		id: 5,
 		nom: "Jupiter",
+		latin: "Juppiter",
 		imgUrl:
 			"https://cnes.fr/sites/default/files/drupal/201604/image/is-jupiter-planete.jpg",
 		diametre: "142 984 km",
@@ -96,7 +101,8 @@ const plantsInfo = [
 	},
 	{
 		id: 6,
-		nom: "Saturn",
+		nom: "Saturne",
+		latin: "Saturnus",
 		imgUrl:
 			"https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80",
 		diametre: "120 536 km",
@@ -113,6 +119,7 @@ const plantsInfo = [
 	{
 		id: 7,
 		nom: "Uranus",
+		latin: "Uranus",
 		imgUrl:
 			"https://images.unsplash.com/photo-1614732484003-ef9881555dc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80",
 		diametre: "51 118 km",
@@ -129,6 +136,7 @@ const plantsInfo = [
 	{
 		id: 8,
 		nom: "Neptune",
+		latin: "Neptūnus",
 		imgUrl:
 			"https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
 		diametre: "49 244 km",
