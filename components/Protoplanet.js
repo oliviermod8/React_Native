@@ -15,13 +15,14 @@ const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
 const Protoplanet = ({ item }) => {
-  const navigation = useNavigation();
-  return (
-    <View style={styles.centeredView}>
-      <Image source={picture[item.id]} style={styles.image} />
-      <Text style={styles.texteBig}>{item.nom}</Text>
-      <Text style={styles.texteLatin}>"En latin {item.latin}"</Text>
-      <Text style={styles.temperature}>{item.temperature}</Text>
+	const image = { uri: item.imgUrl };
+	const navigation = useNavigation();
+	return (
+		<View style={styles.centeredView}>
+			<Image source={picture[item.id]} style={styles.image} />
+			<Text style={styles.texteBig}>{item.nom}</Text>
+			<Text style={styles.texteLatin}> {item.pho} </Text>
+			{/* <Text style={styles.temperature}>{item.temperature} | {item.element}</Text> */}
 
       <TouchableOpacity
         onPress={() => navigation.push("DetailsPlanets", { itemId: item.id })}
