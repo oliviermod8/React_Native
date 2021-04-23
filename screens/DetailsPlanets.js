@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
 		flexDirection: "column",
 		justifyContent: "space-between",
 		alignItems: "center",
+		marginBottom: 120,
 	},
 	containerImg: {
 		height: windowHeight / 2,
@@ -151,6 +152,7 @@ const styles = StyleSheet.create({
 		color: "#fff",
 		fontSize: 20,
 		textAlign: "justify",
+		marginBottom: 50
 	},
 	planetInformation: {
 		width: "80%",

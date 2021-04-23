@@ -7,12 +7,12 @@ const plantsInfo = [
 		pho : "sɔlɛj",
 		imgUrl:
 			"sun.jpeg",
-			diametre: "1 393 684",
+			diametre: "1 393 ...",
 			distanceSoleil: "0",
 		temperature: "5 500 °C",
 		element: "H & He",
-		type: "",
-		inclinaison: "",
+		type: "/",
+		inclinaison: "/",
 		gravite: "0",
 		accroche:
 			"Le Soleil est l’étoile autour de laquelle tournent la Terre et les autres planètes du Système solaire.",
