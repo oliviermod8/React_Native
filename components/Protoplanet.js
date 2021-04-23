@@ -21,13 +21,13 @@ const Protoplanet = ({ item }) => {
 			<Image source={image} style={styles.image} />
 			<Text style={styles.texteBig}>{item.nom}</Text>
 			<Text style={styles.texteLatin}>"En latin {item.latin}"</Text>
-			<Text style={styles.texteNormal}>{item.temperature}</Text>
+			<Text style={styles.temperature}>{item.temperature}</Text>
 
 			<TouchableOpacity
 				onPress={() => navigation.push("DetailsPlanets", { itemId: item.id })}
 			>
 				<View style={styles.buttonAcceuil}>
-					<Text style={styles.textbuttonAccount}>{item.id}</Text>
+					<Text style={styles.textbuttonAccount}>Explore</Text>
 				</View>
 			</TouchableOpacity>
 		</View>
@@ -42,7 +42,9 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		marginTop: 22,
+		height: windowHeight,
 		backgroundColor: "black",
+		width: windowWidth,
 	},
 	image: {
 		width: windowWidth,
@@ -66,11 +68,12 @@ const styles = StyleSheet.create({
 		color: "white",
 		paddingBottom: "3%",
 	},
-	texteNormal: {
+	temperature: {
 		alignItems: "center",
 		fontSize: 30,
 		textAlign: "center",
 		color: "white",
+		paddingBottom: "2%",
 	},
 	buttonAcceuil: {
 		marginTop: 5,
