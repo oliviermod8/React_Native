@@ -4,30 +4,31 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { FlatList, View, StyleSheet, Dimensions } from "react-native";
 import plantsInfo from "../components/planets";
 import Protoplanet from "../components/Protoplanet";
+import { SimpleAnimation } from "react-native-simple-animations";
 
 const windowWidth = Dimensions.get("window").width;
 
 const Allplanets = () => {
-  return (
-    <View>
-      <FlatList
-        data={plantsInfo}
-        horizontal
-        renderItem={({ item }) => <Protoplanet item={item} />}
-        style={styles.vueP}
-        contentContainerStyle={{
-          justifyContent: "center",
-        }}
-      />
-    </View>
-  );
+	return (
+		<View>
+			<FlatList
+				data={plantsInfo}
+				horizontal
+				renderItem={({ item }) => <Protoplanet item={item} />}
+				style={styles.vueP}
+				contentContainerStyle={{
+					justifyContent: "center",
+				}}
+			/>
+		</View>
+	);
 };
 
 export default Allplanets;
 
 const styles = StyleSheet.create({
-  vueP: {
-    width: windowWidth,
-    backgroundColor: "black",
-  },
+	vueP: {
+		width: windowWidth,
+		backgroundColor: "black",
+	},
 });
