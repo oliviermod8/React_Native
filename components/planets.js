@@ -4,7 +4,7 @@ const plantsInfo = [
 		nom: "Soleil",
 		latin: "soliculus",
 		imgUrl:
-			"https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+			"sun.jpeg",
 		diametre: "1 393 684 km",
 		distanceSoleil: "",
 		temperature: "5 500 °C",
@@ -19,7 +19,7 @@ const plantsInfo = [
 		nom: "Mercure",
 		latin: "Mercurius",
 		imgUrl:
-			"https://cnes.fr/sites/default/files/drupal/201511/image/is_mercure-messenger.jpg",
+			"mercure.jpeg",
 		diametre: "4 879 km",
 		distanceSoleil: "57,9 millions de km",
 		temperature: "+169°C",
@@ -36,7 +36,7 @@ const plantsInfo = [
 		nom: "Vénus",
 		latin: "Venus",
 		imgUrl:
-			"https://cnes.fr/sites/default/files/drupal/201511/image/is_venus-nasa.jpg",
+			"venus.jpeg",
 		diametre: "12 104 km",
 		distanceSoleil: "57,9 millions de km",
 		temperature: "470°C",
@@ -53,7 +53,7 @@ const plantsInfo = [
 		nom: "La Terre",
 		latin: "Terra",
 		imgUrl:
-			"https://cnes.fr/sites/default/files/drupal/201610/image/is-terre-apollo17.jpg",
+			"terre.jpg",
 		diametre: "12 756 km",
 		distance: "149,6 millions de km",
 		temperature: "16°",
@@ -70,7 +70,7 @@ const plantsInfo = [
 		nom: "Mars",
 		latin: "Mārs",
 		imgUrl:
-			"https://cnes.fr/sites/default/files/drupal/201510/image/is_mars-planete.jpg",
+			"mars.jpg",
 		diametre: "6 794 km",
 		distance: "227,9 millions de km",
 		temperature: " -63°C ",
@@ -87,7 +87,7 @@ const plantsInfo = [
 		nom: "Jupiter",
 		latin: "Juppiter",
 		imgUrl:
-			"https://cnes.fr/sites/default/files/drupal/201604/image/is-jupiter-planete.jpg",
+			"jupiter.jpeg",
 		diametre: "142 984 km",
 		distance: "778,6 millions de km",
 		temperature: "-108°C",
@@ -104,7 +104,7 @@ const plantsInfo = [
 		nom: "Saturne",
 		latin: "Saturnus",
 		imgUrl:
-			"https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80",
+			"saturn.jpeg",
 		diametre: "120 536 km",
 		distance: "1 milliard et 430 millions de km",
 		temperature: "-140°C",
@@ -121,7 +121,7 @@ const plantsInfo = [
 		nom: "Uranus",
 		latin: "Uranus",
 		imgUrl:
-			"https://images.unsplash.com/photo-1614732484003-ef9881555dc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80",
+			"uranus.jpeg",
 		diametre: "51 118 km",
 		distance: "2 872,5 millions de km",
 		temperature: "-220°C",
@@ -138,7 +138,7 @@ const plantsInfo = [
 		nom: "Neptune",
 		latin: "Neptūnus",
 		imgUrl:
-			"https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+			"neptune.jpeg",
 		diametre: "49 244 km",
 		distance: "4 504 millions de km",
 		temperature: " -218°C",
