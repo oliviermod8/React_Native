@@ -20,8 +20,8 @@ const Protoplanet = ({ item }) => {
 		<View style={styles.centeredView}>
 			<Image source={image} style={styles.image} />
 			<Text style={styles.texteBig}>{item.nom}</Text>
-			<Text style={styles.texteLatin}>"En latin {item.latin}"</Text>
-			<Text style={styles.temperature}>{item.temperature}</Text>
+			<Text style={styles.texteLatin}> {item.pho} </Text>
+			{/* <Text style={styles.temperature}>{item.temperature} | {item.element}</Text> */}
 
 			<TouchableOpacity
 				onPress={() => navigation.push("DetailsPlanets", { itemId: item.id })}
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		color: "white",
 		paddingBottom: "5%",
-		fontWeight: "100",
+		fontWeight: "normal",
 	},
 	texteLatin: {
 		alignItems: "center",
@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		color: "white",
 		paddingBottom: "3%",
+		fontWeight: "normal"
 	},
 	temperature: {
 		alignItems: "center",
