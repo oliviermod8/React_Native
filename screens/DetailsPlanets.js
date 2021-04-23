@@ -36,6 +36,7 @@ const DetailsPlanets = ({ navigation, route }) => {
 					>
 						<View style={styles.introPlanet}>
 							<Text style={styles.title}>{plantsInfo[itemId].nom}</Text>
+							<Text style={styles.title}>{plantsInfo[itemId].symbol}</Text>
 							<Text style={styles.accroche}>{plantsInfo[itemId].accroche}</Text>
 						</View>
 					</SimpleAnimation>
@@ -45,16 +46,24 @@ const DetailsPlanets = ({ navigation, route }) => {
 					<Image style={styles.bgPlanet} source={picture[itemId]}></Image>
 					<View style={styles.box}>
 						<Text style={styles.titleBox}>Type :</Text>
-						<Text style={styles.textBox}> {plantsInfo[itemId].type} </Text>
+						<Text style={styles.textType}> {plantsInfo[itemId].type} </Text>
 					</View>
+
 					<View style={styles.box}>
 						<Text style={styles.titleBox}>Distance :</Text>
-						<Text style={styles.textBox}> {plantsInfo[itemId].distance} </Text>
+						<Text style={styles.textBox}>
+							{" "}
+							{plantsInfo[itemId].distanceSoleil}{" "}
+						</Text>
+						<Text style={styles.textDesc}> Millions de km </Text>
 					</View>
+
 					<View style={styles.box}>
 						<Text style={styles.titleBox}>Gravité :</Text>
 						<Text style={styles.textBox}> {plantsInfo[itemId].gravite} </Text>
+						<Text style={styles.textDesc}>m/s2</Text>
 					</View>
+
 					<View style={styles.box}>
 						<Text style={styles.titleBox}>Inclinaison :</Text>
 						<Text style={styles.textBox}>
@@ -62,16 +71,20 @@ const DetailsPlanets = ({ navigation, route }) => {
 							{plantsInfo[itemId].inclinaison}{" "}
 						</Text>
 					</View>
+
 					<View style={styles.box}>
 						<Text style={styles.titleBox}>Température :</Text>
 						<Text style={styles.textBox}>
 							{" "}
 							{plantsInfo[itemId].temperature}{" "}
 						</Text>
+						<Text style={styles.textDesc}>Celcius</Text>
 					</View>
+
 					<View style={styles.box}>
 						<Text style={styles.titleBox}>Diametre :</Text>
 						<Text style={styles.textBox}> {plantsInfo[itemId].diametre} </Text>
+						<Text style={styles.textDesc}>Kilomètres</Text>
 					</View>
 				</View>
 			</ScrollView>
@@ -174,7 +187,19 @@ const styles = StyleSheet.create({
 	},
 	textBox: {
 		color: "white",
-		marginTop: 60,
+		fontSize: 40,
+		marginTop: 30,
+		textTransform: "capitalize",
+	},
+	textDesc: {
+		color: "white",
+		marginTop: 20,
+		textTransform: "capitalize",
+	},
+	textType: {
+		color: "white",
+		marginTop: 30,
+		fontSize: 30,
 		textTransform: "capitalize",
 	},
 });

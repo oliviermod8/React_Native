@@ -27,18 +27,19 @@ const Protoplanet = ({ item }) => {
 			animateOnUpdate
 			style={styles.centeredView}
 		>
-			<Image source={picture[item.id]} style={styles.image} />
-			<Text style={styles.texteBig}>{item.nom}</Text>
-			<Text style={styles.texteLatin}>"En latin {item.latin}"</Text>
-			<Text style={styles.temperature}>{item.temperature}</Text>
+			<View style={styles.centeredView}>
+				<Image source={picture[item.id]} style={styles.image} />
+				<Text style={styles.texteBig}>{item.nom}</Text>
+				<Text style={styles.texteLatin}> {item.pho} </Text>
 
-			<TouchableOpacity
-				onPress={() => navigation.push("DetailsPlanets", { itemId: item.id })}
-			>
-				<View style={styles.buttonAcceuil}>
-					<Text style={styles.textbuttonAccount}>Explore</Text>
-				</View>
-			</TouchableOpacity>
+				<TouchableOpacity
+					onPress={() => navigation.push("DetailsPlanets", { itemId: item.id })}
+				>
+					<View style={styles.buttonAcceuil}>
+						<Text style={styles.textbuttonAccount}>Explore</Text>
+					</View>
+				</TouchableOpacity>
+			</View>
 		</SimpleAnimation>
 	);
 };
