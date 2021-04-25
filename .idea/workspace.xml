@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da96cd98-94ef-4625-bc2d-11920c82c588" name="Default Changelist" comment="" />
+    <list default="true" id="da96cd98-94ef-4625-bc2d-11920c82c588" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/DoneWithIt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DoneWithIt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +60,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -71,11 +83,11 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="578" y="197" width="1128" height="843" key="AVDManager" timestamp="1619177475985">
+    <state x="578" y="197" width="1128" height="843" key="AVDManager" timestamp="1619192327713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="AVDManager/1920.0.1280.693/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619045720479" />
-    <state x="578" y="197" width="1128" height="843" key="AVDManager/1920.0.1280.693/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619177475985" />
+    <state x="578" y="197" width="1128" height="843" key="AVDManager/1920.0.1280.693/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619192327713" />
     <state x="-1250" y="182" key="SettingsEditor" timestamp="1619044262642">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
